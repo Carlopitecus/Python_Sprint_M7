@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}ToDo-Editar{% endblock title %} 
+
+{%block main %}
+
+<div class="container">
+
+    <h2>Edita tus Tareas</h2>
+    
+    <div class="card">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h4 class="card-title">Datos de la tarea</h4>
+
+    <form action="" method='POST'>
+      {% csrf_token %}
+      {{form.as_p}}
+      <input name="" id="" class="btn btn-success" type="submit" value="Enviar Información" />
+    <a name="" id="" class="btn btn-primary" href="{% url 'app:tareas' %}" role="button" >Cancelar</a>
+  </form>
+
+</div>
+<div class="card-footer text-muted">Footer</div>
+</div>
+</div>
